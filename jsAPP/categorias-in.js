@@ -19,9 +19,10 @@ $(document).ready(function(e) {
 			})
 			.done(function( result ) {
 				
-				alert(result);
+				
 				var html = "";
 				$.each(result, function () {
+					alert(this.id);
 					if(this.id>0)
 					{
 						html +=    "<a href='#' class='list-group-item link' data-id='"+this.id+"'><h5>"+this.nombreEmpresa+"<i class='fa fa-caret-right pull-right'></i></h5><p>Texto Descriptivo</p></a>";

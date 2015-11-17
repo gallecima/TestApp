@@ -8,6 +8,7 @@ $(document).ready(function(e) {
 			var lat = position.coords.latitude;
 			var lng = position.coords.longitude;
 	
+			alert(window.localStorage.getItem("id-categoria")+"-"+lat+"-"+lng);
 			
 			$.ajax({
 				method: "POST",
@@ -22,7 +23,7 @@ $(document).ready(function(e) {
 				
 				var html = "";
 				$.each(result, function () {
-					alert(this.id);
+					
 					if(this.id>0)
 					{
 						html +=    "<a href='#' class='list-group-item link' data-id='"+this.id+"'><h5>"+this.nombreEmpresa+"<i class='fa fa-caret-right pull-right'></i></h5><p>Texto Descriptivo</p></a>";

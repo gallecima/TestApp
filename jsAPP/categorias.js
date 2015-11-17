@@ -1,5 +1,4 @@
 var app = {
-
 	// Application Constructor
     initialize: function() {
         this.bindEvents();
@@ -33,6 +32,7 @@ var app = {
           			html += "<a href='categorias-in.html' class='list-group-item' data-id='"+this.id+"'><h4 class='list-group-item-heading'><i class='"+this.icono+"'>"+this.nombre+"</h4></a>";
 				}
 			});
+
 			$("#listaCategorias").append(html);
 		});			
     }

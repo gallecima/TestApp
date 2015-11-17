@@ -35,7 +35,6 @@
 	<gap:plugin name="cordova-plugin-whitelist" source="npm" />
 	<gap:plugin name="org.apache.cordova.geolocation" source="pgb" />
 	<gap:plugin name="phonegap-plugin-push" source="npm" />
-	<gap:plugin name="de.appplant.cordova.plugin.local-notification" />
 	
 	<allow-navigation href="*" />
 	<allow-intent href="http://*/*" />

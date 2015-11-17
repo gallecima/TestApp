@@ -7,9 +7,7 @@ $(document).ready(function(e) {
 		
 			var lat = position.coords.latitude;
 			var lng = position.coords.longitude;
-	
-			alert(window.localStorage.getItem("id-categoria")+"-"+lat+"-"+lng);
-			
+
 			$.ajax({
 				method: "POST",
 				dataType: "json",
@@ -26,7 +24,7 @@ $(document).ready(function(e) {
 					
 					if(this.id>0)
 					{
-						html +=    "<a href='#' class='list-group-item link' data-id='"+this.id+"'><h5>"+this.nombreEmpresa+"<i class='fa fa-caret-right pull-right'></i></h5><p>Texto Descriptivo</p></a>";
+						html +=    "<a href='#' class='list-group-item link' data-id='"+this.id+"'><h5>"+this.nombreEmpresa+"<i class='fa fa-caret-right pull-right'></i></h5><p>Texto Descriptivo<span class='pull-right'>"+this.distancia+"</span></p></a>";
 					}
 				});
 	

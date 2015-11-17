@@ -1,0 +1,46 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<widget xmlns = "http://www.w3.org/ns/widgets"
+
+	xmlns:gap   = "http://phonegap.com/ns/1.0"
+	id          = "com.PIXELIO.ubiquo"
+	version     = "1.0.0"
+	versionCode = "12" >
+
+	<!-- versionCode is optional and Android only -->
+
+	<name>UBIQUO</name>
+	
+	<description>
+	Geofenced ads app
+	</description>
+	<author href="www.pixelio.com.ar" email="info@pixelio.com.ar">
+	Agustin Cima
+	</author>
+	
+	<preference name="android-minSdkVersion" value="14" />
+	<preference name="android-build-tool" value="gradle" /> 
+	
+	<icon src="icon.png" gap:platform="android" gap:density="ldpi" />
+	<icon src="icon.png" gap:platform="android" gap:density="mdpi" />
+	<icon src="icon.png" gap:platform="android" gap:density="hdpi" />
+	<icon src="icon.png" gap:platform="android" gap:density="xhdpi" />
+	<icon src="icon.png" gap:platform="android" gap:density="xxhdpi" />
+	<icon src="icon.png" gap:platform="android" gap:density="xxxhdpi" />
+	<gap:splash src="splash.png" gap:platform="android" gap:density="ldpi" />
+	<gap:splash src="splash.png" gap:platform="android" gap:density="mdpi" />
+	<gap:splash src="splash.png" gap:platform="android" gap:density="hdpi" />
+	<gap:splash src="splash.png" gap:platform="android" gap:density="xhdpi" />
+	<gap:splash src="splash.png" gap:platform="android" gap:density="xxhdpi" />
+
+	<gap:plugin name="cordova-plugin-whitelist" source="npm" version="1.0.0" />
+	<gap:plugin name="org.apache.cordova.geolocation" source="pgb" version="0.3.12" />
+	<gap:plugin name="phonegap-plugin-push" source="npm" version="1.4.2" />
+	<gap:plugin name="de.appplant.cordova.plugin.local-notification" />
+	
+	<allow-navigation href="*" />
+	<allow-intent href="http://*/*" />
+	<allow-intent href="https://*/*" />
+	<allow-intent href="*" />
+	<access origin="*" />
+
+</widget>

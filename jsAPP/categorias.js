@@ -1,22 +1,7 @@
-var app = {
-	// Application Constructor
-    initialize: function() {
-        this.bindEvents();
-    },
-    // Bind Event Listeners
-    //
-    // Bind any events that are required on startup. Common events are:
-    // 'load', 'deviceready', 'offline', and 'online'.
-    bindEvents: function() {
-        document.addEventListener('deviceready', this.onDeviceReady, false);
-    },
-    // deviceready Event Handler
-    //
-    // The scope of 'this' is the event. In order to call the 'receivedEvent'
-    // function, we must explicitly call 'app.receivedEvent(...);'
-    onDeviceReady: function() {
-
-		console.log("yes");
+$(document).ready(function(e) {
+    	
+		waitingDialog.show('Cargando', {dialogSize: 'sm', progressType: 'info'});
+		
 		$.ajax({
 			method: "POST",
 			dataType: "json",
@@ -29,13 +14,20 @@ var app = {
 			$.each(result, function () {
 				if(this.id>0)
 				{
-          			html += "<a href='categorias-in.html' class='list-group-item' data-id='"+this.id+"'><h4 class='list-group-item-heading'><i class='"+this.icono+"'>"+this.nombre+"</h4></a>";
+          			html += "<a href='#' class='list-group-item link' data-id='"+this.id+"'><h4 class='list-group-item-heading'><i class='"+this.icono+"'></i>"+this.nombre+"<i class='fa fa-caret-right pull-right'></i></h4></a>";
 				}
 			});
 
 			$("#listaCategorias").append(html);
-		});			
-    }
-};
+			
+			$(".link").click(function(){
+				window.localStorage.setItem("id-categoria", $(this).data("id"));
+				document.location="categorias-in.html";
+			});
+			
+			waitingDialog.hide();
+		});	
+		
+			
 
-app.initialize();
+});

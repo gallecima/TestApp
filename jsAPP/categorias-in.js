@@ -8,6 +8,7 @@ $(document).ready(function(e) {
 			var lat = position.coords.latitude;
 			var lng = position.coords.longitude;
 	
+			
 			$.ajax({
 				method: "POST",
 				dataType: "json",
@@ -17,6 +18,8 @@ $(document).ready(function(e) {
 				data: { id_categoria: window.localStorage.getItem("id-categoria"), lat: lat, lng: lng}
 			})
 			.done(function( result ) {
+				
+				alert(result);
 				var html = "";
 				$.each(result, function () {
 					if(this.id>0)

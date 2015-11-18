@@ -51,14 +51,31 @@
     </div>
 
     <ul class="nav nav-pills nav-justified">
-      <li role="presentation"><a href="categorias.html"><i class="fa fa-caret-left fa-2x"></i></a></li>
+      <li role="presentation"><a href="categorias-in.html"><i class="fa fa-caret-left fa-2x"></i></a></li>
       <li role="presentation"><a href="mapa.html"><i class="fa fa-map-marker fa-2x"></i></a></li>
       <li role="presentation"><a href="favoritos.html"><i class="fa fa-star fa-2x"></i></a></li>
     </ul>
         
-    <div class="list-group" id="listaOfertas"></div>
+    <!-- Carousel
+    ================================================== -->
+    <div id="myCarousel" class="carousel slide" data-ride="carousel">
 
-
+      <ol class="carousel-indicators"></ol>
+      <div class="carousel-inner"></div>
+     
+    </div>
+    
+    <!-- /.carousel -->
+	
+    <div class="container">
+		<h3 id="nombreEmpresa"></h3>
+        <h4 id="tituloOferta"></h4>
+        <hr>
+        <span id="descripcionOferta"></span>
+        
+        <ul class="list-group margin-30" id="datosEmpresa"></ul>
+    </div>
+    
     <!-- Bootstrap core JavaScript
     ================================================== -->
     <!-- Placed at the end of the document so the pages load faster -->
@@ -66,7 +83,7 @@
     <script src="js/bootstrap.min.js"></script>
   	<script src="js/jasny-bootstrap.min.js"></script>
     <script src="jsAPP/common.js"></script>
-    <script src="jsAPP/categorias-in.js"></script>
+	<script src="jsAPP/ofertas.js"></script>
     
 </body>
 </html>

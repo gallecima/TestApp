@@ -24,7 +24,12 @@ $(document).ready(function(e) {
 					
 					if(this.id>0)
 					{
+						
+						
 						html +=    "<a href='#' class='list-group-item link' data-id='"+this.id+"'><h5>"+this.nombreEmpresa+"<i class='fa fa-caret-right pull-right'></i></h5><p>"+this.titulo+"<span class='pull-right'><i class='fa fa-location-arrow'></i>"+this.distancia+" km</span></p></a>";
+
+
+					
 					}
 				});
 	

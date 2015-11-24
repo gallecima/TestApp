@@ -58,11 +58,11 @@ $(document).ready(function(e) {
 					$("#tituloOferta").html(this.tituloOferta);
 					$("#descripcionOferta").html(this.descripcionOferta);
 					
-					if (this.direccionOferta!=null){ html += "<a href='#' class='list-group-item link'>"+this.direccionOferta+"</a>"; }
-					if (this.localidadOferta!=null){ html += "<a href='#' class='list-group-item link'>"+this.localidadOferta+"</a>"; }
-					if (this.telefonoOferta!=null){ html += "<a href='#' class='list-group-item link'>"+this.telefonoOferta+"</a>"; }
-					if (this.webOferta!=null){ html += "<a href='#' class='list-group-item link'>"+this.webOferta+"</a>"; }
-					if (this.emailOferta!=null){ html += "<a href='#' class='list-group-item link'>"+this.emailOferta+"</a>"; }
+					if (this.direccionOferta!=null){ html += "<a href='#' class='list-group-item link'><i class='fa fa-home' style='margin-right:10px'></i>"+this.direccionOferta+"</a>"; }
+					if (this.localidadOferta!=null){ html += "<a href='#' class='list-group-item link'><i class='fa fa-map-marker' style='margin-right:10px'></i>"+this.localidadOferta+"</a>"; }
+					if (this.telefonoOferta!=null){ html += "<a href='#' class='list-group-item link'><i class='fa fa-phone' style='margin-right:10px'></i>"+this.telefonoOferta+"</a>"; }
+					if (this.webOferta!=null){ html += "<a href='#' class='list-group-item link'><i class='fa fa-globe' style='margin-right:10px'></i>"+this.webOferta+"</a>"; }
+					if (this.emailOferta!=null){ html += "<a href='#' class='list-group-item link'><i class='fa fa-envelope-o' style='margin-right:10px'></i>"+this.emailOferta+"</a>"; }
 					
 					$("#datosEmpresa").append(html);
 				
